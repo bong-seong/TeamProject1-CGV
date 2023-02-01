@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*--------웹폰트------------  */
+
+
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------기본값--------*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'SUIT-Regular';
+}
+li{
+	list-style: none;
+}
+
+
+/*--------스토어 wrap---------------------------*/
+
+
+
+/*--------배너이미지------------------------*/
+.imageDiv{
+	display: flex;
+	justify-content: center;
+		
+}
+.image{
+	
+	width: 49%; height: 0;
+	padding-top: 20%;
+	background-image: url("../img/store/main_image.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	 
+}
+
+/*---------카테고리-----------------------*/
+.left-category li{
+	display: inline-block;
+}
+
+.category_wrap{
+	display: flex;
+	justify-content: center;
+}
+
+.category{
+	width: 47%;
+	padding: 1%;
+	border-top: 1px gray solid;
+	border-bottom: 1px gray solid;
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+
+.categoryUl{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.category_li{
+	white-space: nowrap;
+	font-family: 'twayair' !important;
+	font-size: 18px;
+	color: gray;
+	
+}
+
+/*------------제품-----------------*/
+.productAll{
+	width: 49%;
+	margin: 0 auto;
+}
+
+.p_head{
+	padding:  2% 2%;
+	font-size: 27px;
+	border-bottom: 1px solid black;
+	font-family: 'twayair';
+}
+
+.productDiv{
+	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 2%;
+	margin: 2%;
+	
+}
+
+.product{
+	width: 30%;
+}
+
+.product_img{
+	width: 100%;
+}
+
+
+/*------------장바구니--------------  */
+.basket{
+	width: 100%;
+	background-color: #eeeeee;
+	/* position: sticky;
+	bottom: 0; */
+
+}
+
+.basket_width{
+	
+	width: 49%;
+	margin: 0 auto;
+	background-color: blue;
+}
+
