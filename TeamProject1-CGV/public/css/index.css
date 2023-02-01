@@ -1,1 +1,16 @@
 @charset "UTF-8";
+
+/* 기본값 적용 */
+*{ margin:0px; padding: 0px; }
+
+*{ border: solid 1px red; }
+
+
+.videobox{
+	background-color: black;
+	text-align: center;
+}
+
+.main{
+	width: 1200px; height: 1500px;
+}
