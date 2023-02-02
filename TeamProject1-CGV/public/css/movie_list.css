@@ -1,1 +1,24 @@
 @charset "UTF-8";
+
+* {padding: 0px; margin: 0 auto;text-align: center;}
+a {text-decoration: none; color: black;}
+
+
+.wrap {width: 900px; background-color: #eeeeeeee;}
+.row {background-color: #FFC600;height: 50px;align-items: center;}
+
+.now, .next { border: none; background-color:#FFC600; color: white; }
+
+
+/* 출력 구역 설정*/
+.items {flex-wrap: wrap;display: flex;justify-content:space-between;
+		width: 900px;}
+/* 아이템 설정 */
+.item {width: 24%;padding: 2%;}
+.m_img{width: 100%; padding-bottom: 3%;}
+.m_name {font-weight: bold; font-size: 18px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;}
+.viewbtn {width: 100px; font-size:15px; border-radius:5px;
+		border:none;background-color: navy; color: white;}
