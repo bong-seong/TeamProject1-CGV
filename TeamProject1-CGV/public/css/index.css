@@ -171,7 +171,7 @@
     display: block;
     width: auto;
     height: 100%;
-    object-fit: contain;
+   
 }
 
 
@@ -180,7 +180,7 @@
     font-size: 16px;
     color: #222;
     letter-spacing: 0.313em;
-    line-height: 1.500em;
+    
 }
 
 .btn_list li{
@@ -233,5 +233,8 @@
 	padding: 5px 0;
 	top: 113px;
 	left: 0;
+	
+	
+	
 }
 
