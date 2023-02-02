@@ -99,16 +99,19 @@ li{
 .productDiv{
 	
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-
+	
 	margin: 1%;
+	padding-left: 2%;
 	
 }
 
 .product{
 	width: 28%;
-	margin-bottom: 8%;
+	padding-bottom: 8%;
+	margin: 2%;
+	
 }
 
 .product_img{
@@ -169,7 +172,7 @@ li{
 	font-family: 'twayair';
 	font-size: 20px;
 	margin-left: 5%;
-	background-color: red;
+	background-color: #40266e;
 	border-radius: 25%;
 	padding: 1% 5%;
 	color: white;
@@ -201,7 +204,7 @@ li{
 }
 
 .orderbtnDiv{
-	background-color: red;
+	background-color: #40266e;
 	display: flex;
 	justify-content: center;
 	align-items: center;
