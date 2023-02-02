@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 /*공통 */
  * {background-color:white;
  	 text-align:center;
@@ -29,6 +27,120 @@
     background-color: #fff;
     border-bottom: 1px solid #eee;
 }
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본값 적용 */
+*{ margin:0px; padding: 0px; font-family: 'SUIT-Regular' }
+
+
+
+
+
+.videobox{
+	background-color: black;
+	text-align: center;
+}
+
+
+.movie_chart{
+	width: 1040px; 
+	margin: 0 auto; 
+	padding: 40px;
+}
+
+
+.chart_head{
+	background-color: rgba(232, 232, 232, 0.37); 
+}
+
+.chart_top{
+	display: flex; justify-content: space-between;
+}
+
+.tx1{ 
+	font-size: 26px; color: #222222; 
+	font-weight: bold;
+}
+
+.tx2{ color: #cccccc; margin: 0px 10px; }
+
+.tx3{ color: #666666; font-size: 26px; }
+
+.tx4{ margin-left: 10px; font-size: 14px; }
+
+.stopbtn{ 
+	padding: 5px 10px; border-radius: 30px; border: solid 1px #e2e2e2;
+	background-color: #FEFEFE
+}
+
+
+.allbtn{
+	padding: 5px 10px; border-radius: 30px;
+	font-size: 14px; border: solid 1px #e2e2e2;
+	background-color: rgba(232, 232, 232, 0.1);
+}
+
+.movie_item_box{ 
+	display: flex; flex-wrap: wrap; 
+	width: 100%; justify-content: space-between; 
+}
+.movie_item{ width: 16% ; margin: 20px 10px;}
+.movie_item img { width: 100%; border-radius: 15px; }
+
+
+.movie_title{ 
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 5%;
+	font-size: 18px; color: #222222;
+	font-weight: bold;
+}
+
+.movie_info_box{
+	display: flex; justify-content: space-between;
+	padding: 1% 5%;
+	font-size: 14px; color: #444444;
+}
+
+
+.event_box{
+	width: 1040px; margin: 0 auto;
+	height: 500px;
+}
+
+.event_top{ 
+	display: flex; justify-content: space-between;
+	padding: 50px 0px 20px 0px;
+}
+
+
+.event_item_box{ width: 33%; }
+.event_item img { width: 100%; border-radius: 10px; }
+.event_title{ 
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 10px 0px; 
+	font-size: 18px; color: #222222;
+	font-weight: bold;
+}
+.event_time{ font-size: 14px; color: #666666; }
 
 .header .header_btn {
     width: 980px;
