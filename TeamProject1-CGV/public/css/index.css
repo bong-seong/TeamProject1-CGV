@@ -223,3 +223,15 @@
     white-space: nowrap;
     transform: translate(-50%, 0);
 }
+
+
+.nav .contents .nav_menu .h2{
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 100px;
+	padding: 5px 0;
+	top: 113px;
+	left: 0;
+}
+
