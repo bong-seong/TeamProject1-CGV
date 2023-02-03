@@ -30,8 +30,11 @@ let productList = [
 let cartListArray = []
 let orderListArray = []
 
+//전역변수
+let totalPrice = 0;
+
 //객체화
-let modal_wrap =  document.querySelector('.modal_wrap')
+let modal_wrap =  document.querySelector('.modal_wrap') //모달배경div
 
 //js실행시 함수실행
 category_print();
@@ -87,6 +90,7 @@ function product_print(i){ // 카테고리별 제품출력 함수
 	
 }
 
+// 제품을 클릭하면 장바구니에 담기는 함수
 function cartList_print(j){
 	//장바구니에 제품 담기
 	let html = '';
@@ -102,31 +106,128 @@ function cartList_print(j){
 			`
 	
 	document.querySelector('.basket_bottom').innerHTML += html;
+	
+	//
 	cartListArray.push(productList[j])
-	console.log("cartListArray")
-	console.log(cartListArray)
+	
+	
 	
 	// 장바구니 추가한 제품 개수 출력
 	// 총 금액 출력
-	let basketNum = 0;
-	let totalPrice = 0;
-	for ( let c = 0 ; c < cartListArray.length ; c++ ){
-		basketNum++
-		let price = cartListArray[c].price;
-		console.log("cartListArray[c].price")
-		console.log(cartListArray[c].price)
-		totalPrice += price;
-	}
-	console.log("basketNum" + basketNum)
-	document.querySelector('.basketNum').innerHTML = basketNum;
-	document.querySelector('.totalPrice').innerHTML = totalPrice.toLocaleString()+" 원";
+	cartCount_Total();
 		
 }
 
-//결제하기 버튼 누르면 결제정보 모달 출력
-function modal_flex(){
+// 장바구니 추가한 제품 개수 출력
+// 총 금액 출력
+function cartCount_Total(){
 	
+	let basketNum = 0;
+	totalPrice = 0;
+	for ( let c = 0 ; c < cartListArray.length ; c++ ){
+		basketNum++
+		let price = cartListArray[c].price;
+		
+		
+		totalPrice += price;
+	}
+	
+	document.querySelector('.basketNum').innerHTML = basketNum;
+	document.querySelector('.totalPrice').innerHTML = totalPrice.toLocaleString()+" 원";
+}
+
+//결제하기 버튼 누르면 [ 1.orderList에 cartList배열 push / 2. 결제정보 모달 출력 / 
+function order(){
+	// 1.orderList에 cartList객체배열 push
+	let order = {
+		time : new Date() ,
+		products : cartListArray ,
+		total : totalPrice.toLocaleString()
+	}
+	orderListArray.push(order)
+	console.log("orderListArray")
+	console.log(orderListArray)
+	
+	// 2. 숨겼던 모달 나타나기
 	modal_wrap.style.display = 'flex'
+	
+	// 3. 모달에 orderList내의 결제내역 출력
+	let html = '';
+	html += `
+				<tr> <th>극장명</th> <td>CGVOX</td> </tr>
+			`	
+	html += `
+					<tr> <th class="tableLine2">제품명</th> <td class="tableLine2">
+				`
+	/*------------------------------------------------------------*/
+	// 제품이름,주문개수  html에 추가
+	
+	for ( let o = 0 ; o < productList.length ; o++ ){
+		
+		if ( count(o) != 0 ){
+		
+		html += productList[o].name + 'x' + count(o) + '개 <br>'
+		}
+	}
+	
+	function count(o){
+		let count = 0;
+		
+			
+			for ( let i = 0 ; i < orderListArray[0].products.length ; i++){
+				if ( productList[o].name == orderListArray[0].products[i].name){
+					count++ 
+				}
+			}
+			return count;
+		
+	}
+	
+	html += `</td> </tr>`
+	/*------------------------------------------------------------*/
+	//주문시간  html에 추가
+	new Date().getHours()
+	new Date().getMinutes()
+	new Date().getSeconds()
+	let year = orderListArray[0].time.getFullYear()
+	console.log ("year : " + year)
+	let month = orderListArray[0].time.getMonth()+1
+	console.log ("month : " + month)
+	let date = orderListArray[0].time.getDate()
+	console.log ("date : " + date)
+	let hours = orderListArray[0].time.getHours()
+	console.log ("hours : " + hours)
+	let minutes = orderListArray[0].time.getMinutes()
+	console.log ("minutes : " + minutes)
+	let seconds = orderListArray[0].time.getSeconds()
+	console.log ("seconds : " + seconds)
+	
+	
+	
+	html += `<tr> <th>결제시간</th> <td>`
+	
+	html += year+"년"+month+"월"+date+"일 "+hours+"시"+minutes+"분"+seconds+"초"
+			
+	html += `</td> </tr>`
+	/*------------------------------------------------------------*/
+	// 총금액 html에 추가
+	html += `<tr> <th>결제금액</th> <td>${orderListArray[0].total}원</td> </tr>`
+	
+	/*------------------------------------------------------------*/
+	// html 출력
+	document.querySelector('.ordertable').innerHTML = html;
+	
+	cartListArray = []
+	orderListArray = []
+	product_print(0);
+	
+	//장바구니 비우기
+	document.querySelector('.basket_bottom').innerHTML = ''
+	
+	
+	// 장바구니 추가한 제품 개수 출력
+	// 장바구니 총 금액 출력
+	cartCount_Total();
 }
 
 //닫기 버튼 이벤트리스너

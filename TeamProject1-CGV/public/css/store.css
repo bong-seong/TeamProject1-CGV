@@ -270,6 +270,8 @@ li{
 	width: 40%;
 	padding: 3%; border-radius: 5%;
 	
+	margin: 0 auto;
+	
 	}
 
 .modal_h{
@@ -279,24 +281,42 @@ li{
 	margin-bottom: 5%;
 }
 
+
+
 .ordertable{
-	width: 100%;
+	
 	margin: 0 auto;
 	font-size: 20px;
 	text-align: left;
 	margin-bottom: 5%;
-	display: flex;
-	justify-content: center;
+	background-color: #eeeeee;
+	border-radius: 5%;
+	padding: 10% 15%;
+	white-space: nowrap;
+	border-collapse:separate;
+	
+	
 }
 
 .ordertable th{
-	width: 100%;
-}
-
-.ordertable td{
-	width: 100%;
+	padding-right: 5%;
 	
 }
+
+
+.ordertable td{
+	
+	padding: 10% 0;
+	text-align: center;
+	border-spacing: 10%;
+	
+}
+
+.tableLine2{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
 
 .btns{
 	display: flex;
