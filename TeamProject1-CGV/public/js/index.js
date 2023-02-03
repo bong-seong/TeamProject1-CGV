@@ -51,8 +51,10 @@ function movieChart(){
 					<div class="img_box">
 						<img src="img/${ obj.img }">
 						<div class="movie_btn_box">
-						 	<a href="movie_view.html"><button type="button" class="bt1">상세보기</button></a>
-						 	<a href="movie_view.html"><button type="button" class="bt2">예매하기</button></a>
+							<div class="btn_box">
+							 	<a href="movie_view.html"><button type="button" class="bt1">상세보기</button></a>
+							 	<a href="movie_view.html"><button type="button" class="bt2">예매하기</button></a>
+						 	</div>
 						 </div>
 					</div>
 					<div class="movie_title"> ${ obj.name } </div>
