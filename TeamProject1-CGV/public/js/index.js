@@ -1,17 +1,18 @@
 let movieList=[
-	{name:'방탄소년단: 옛 투 컴 인 시네마',	img:'방탄콘서트.jpg', egg: 99, 예매율: 32.1 },
+	{name:'방탄소년단: 옛 투 컴 인 시네마',			img:'방탄콘서트.jpg', egg: 99, 예매율: 32.1 },
 	{name:'아바타-물의 길',						img:'아바타.jpg', egg: 96, 예매율: 31.0},
 	{name:'더 퍼스트 슬램덩크',					img:'슬램덩크.jpg', egg: 97, 예매율: 11.6},
 	{name:'타이타닉',							img:'타이타닉.jpg', egg: 99, 예매율: 7},
-	{name:'바빌론',							img:'바빌론.jpg', egg: 85, 예매율: 5.9}
-]
-
-/*
+	{name:'바빌론',							img:'바빌론.jpg', egg: 85, 예매율: 5.9},
 	{name:'상견니',							img:'상견니.jpg', egg: 81, 예매율: 4},
 	{name:'교섭',								img:'교섭.jpg', egg: 81, 예매율: 3.2},
 	{name:'유령',								img:'유령.jpg', egg: 83, 예매율: 1.9},
 	{name:'메간',								img:'메간.jpg', egg: 88, 예매율: 1.9},
 	{name:'영웅',								img:'영웅.jpg', egg: 0, 예매율: 1.3}
+]
+
+/*
+	
 */
 
 let eventList=[
@@ -39,7 +40,7 @@ let snackList = [
 ]
 
 
-// movieChart()
+movieChart()
 function movieChart(){
 	
 	let html = ''
@@ -49,6 +50,10 @@ function movieChart(){
 		html += `<div class="movie_item">
 					<div class="img_box">
 						<img src="img/${ obj.img }">
+						<div class="movie_btn_box">
+						 	<a href="movie_view.html"><button type="button" class="bt1">상세보기</button></a>
+						 	<a href="movie_view.html"><button type="button" class="bt2">예매하기</button></a>
+						 </div>
 					</div>
 					<div class="movie_title"> ${ obj.name } </div>
 						<div class="movie_info_box">
@@ -87,7 +92,7 @@ function giftPrint(){
 	
 	giftList.forEach( (obj)=>{
 		
-		html += `<a href="#">
+		html += `<a href="store.html">
 					<div class="store_item">
 						<div class="item_img_box">
 							<img src="img/main_page/${obj.img}">
@@ -110,7 +115,7 @@ function drinkPrint(){
 	
 	drinkList.forEach( (obj)=>{
 		
-		html += `<a href="#">
+		html += `<a href="store.html">
 					<div class="store_item">
 						<div class="item_img_box">
 							<img src="img/main_page/${obj.img}">
@@ -133,7 +138,7 @@ function snackPrint(){
 	
 	snackList.forEach( (obj)=>{
 		
-		html += `<a href="#">
+		html += `<a href="store.html">
 					<div class="store_item">
 						<div class="item_img_box">
 							<img src="img/main_page/${obj.img}">
@@ -148,9 +153,6 @@ function snackPrint(){
 	})
 	document.querySelector('.snack_box').innerHTML = html
 }
-
-
-
 
 
 
