@@ -196,7 +196,12 @@ a{ text-decoration: none; }
 	text-align: center;
 }
 .movie_item{ width: 16% ; margin: 20px 10px; text-align: center;}
-.img_box img { width: 100%; border-radius: 15px; height: 240px;}
+.img_box{ height:220px; position: relative; }
+.img_box img { 
+	width: 100%; 
+	border-radius: 15px; 
+	height: 220px;
+}
 
 
 .movie_title{ 
@@ -221,6 +226,16 @@ a{ text-decoration: none; }
 	margin-right: 2px;
 }
 .al{ display: flex; align-items: center;}
+
+.movie_btn_box{
+	width: 100%; height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	border: solid 1px red;
+	background-color: black;
+	
+}
+
 
 .event_box{
 	width: 1040px; margin: 0 auto;

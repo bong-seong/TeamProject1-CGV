@@ -3,13 +3,16 @@ let movieList=[
 	{name:'아바타-물의 길',						img:'아바타.jpg', egg: 96, 예매율: 31.0},
 	{name:'더 퍼스트 슬램덩크',					img:'슬램덩크.jpg', egg: 97, 예매율: 11.6},
 	{name:'타이타닉',							img:'타이타닉.jpg', egg: 99, 예매율: 7},
-	{name:'바빌론',							img:'바빌론.jpg', egg: 85, 예매율: 5.9},
+	{name:'바빌론',							img:'바빌론.jpg', egg: 85, 예매율: 5.9}
+]
+
+/*
 	{name:'상견니',							img:'상견니.jpg', egg: 81, 예매율: 4},
 	{name:'교섭',								img:'교섭.jpg', egg: 81, 예매율: 3.2},
 	{name:'유령',								img:'유령.jpg', egg: 83, 예매율: 1.9},
 	{name:'메간',								img:'메간.jpg', egg: 88, 예매율: 1.9},
 	{name:'영웅',								img:'영웅.jpg', egg: 0, 예매율: 1.3}
-]
+*/
 
 let eventList=[
 	{ img: "필름마크.jpg", title: "CGV 필름마크 100th 기념! [파코니의 방구석 어드벤처]", date: "2023.01.30~2023.02.12"},
@@ -36,7 +39,7 @@ let snackList = [
 ]
 
 
-movieChart()
+// movieChart()
 function movieChart(){
 	
 	let html = ''
