@@ -15,6 +15,15 @@
     font-style: normal;
 }
 
+
+.nav_menu li{ display: inline-block; }
+.h_top{ 
+	display: flex; 
+	justify-content: space-between;
+	width: 1040px; 
+	margin: 0 auto;
+}
+
 /* 기본값 적용 */
 *{ margin:0px; padding: 0px; font-family: 'SUIT-Regular' }
 a{ text-decoration: none; }
