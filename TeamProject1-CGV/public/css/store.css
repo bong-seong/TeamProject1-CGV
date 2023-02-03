@@ -99,16 +99,19 @@ li{
 .productDiv{
 	
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-
+	
 	margin: 1%;
+	padding-left: 2%;
 	
 }
 
 .product{
 	width: 28%;
-	margin-bottom: 8%;
+	padding-bottom: 8%;
+	margin: 2%;
+	
 }
 
 .product_img{
@@ -169,7 +172,7 @@ li{
 	font-family: 'twayair';
 	font-size: 20px;
 	margin-left: 5%;
-	background-color: red;
+	background-color: #40266e;
 	border-radius: 25%;
 	padding: 1% 5%;
 	color: white;
@@ -201,7 +204,7 @@ li{
 }
 
 .orderbtnDiv{
-	background-color: red;
+	background-color: #40266e;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -246,3 +249,64 @@ li{
 	font-weight: bold;
 	margin-bottom: 5%;
 }
+
+/*---------모달----------*/
+.modal_wrap{
+	position:fixed;
+	top: 0; left: 0;
+	
+	width: 100%; height: 100%;
+	background-color: rgba( 0 , 0 , 0 , 0.5); /* 검정 + 투명도50% */
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	display: none;
+}
+
+.modal_box{
+	background-color: white;
+	width: 40%;
+	padding: 3%; border-radius: 5%;
+	
+	}
+
+.modal_h{
+	text-align: center;
+	font-family: 'twayair';
+	font-size: 25px;
+	margin-bottom: 5%;
+}
+
+.ordertable{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 5%;
+	display: flex;
+	justify-content: center;
+}
+
+.ordertable th{
+	width: 100%;
+}
+
+.ordertable td{
+	width: 100%;
+	
+}
+
+.btns{
+	display: flex;
+	justify-content: center;
+}
+
+.btns button{
+	border: none;
+	padding: 1% 2%;
+	margin: 2%;
+	font-size: 18px;
+}
+

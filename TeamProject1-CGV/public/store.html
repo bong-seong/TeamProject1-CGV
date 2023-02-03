@@ -7,6 +7,7 @@
 </head>
 <body>
 	<div class="store_wrap">
+		<img alt="" src="">
 		<!-- ---------------------------------------------------- -->
 		<div class="imageDiv"> <!-- 메인이미지 -->
 		
@@ -20,14 +21,7 @@
 				
 				
 					<ul class="categoryUl">
-						<li class="category_li">영화관람권</li>
-						<li class="category_li">기프트카드</li>
-						<li class="category_li">콤보</li>
-						<li class="category_li">팝콘</li>
-						<li class="category_li">음료</li>
-						<li class="category_li">스낵</li>
-						<li class="category_li">플레이존</li>
-						<li class="category_li">상품권소개</li>
+						
 					</ul>
 				
 				
@@ -39,33 +33,7 @@
 			<div class="productAll">
 				<h3 class="p_head"> 영화관람권 </h3>
 				<div class="productDiv">
-					<div class="product"> <!-- 상품출력 -->
-						<img class="product_img" alt="" src="img/store/영화관람권.jpg">
-						<div class="product_title">CGV영화관람권</div>
-						<div class="product_text">즐거운 경험은 CGVOX에서!</div>
-						<div class="product_price">12,000원</div>
-					</div>
 					
-					<div class="product"> <!-- 상품출력 -->
-						<img class="product_img" alt="" src="img/store/영화관람권.jpg">
-						<div class="product_title">CGV영화관람권</div>
-						<div class="product_text">즐거운 경험은 CGVOX에서!</div>
-						<div class="product_price">12,000원</div>
-					</div>
-					
-					<div class="product"> <!-- 상품출력 -->
-						<img class="product_img" alt="" src="img/store/영화관람권.jpg">
-						<div class="product_title">CGV영화관람권</div>
-						<div class="product_text">즐거운 경험은 CGVOX에서!즐거운 경험은 CGVOX에서!</div>
-						<div class="product_price">12,000원</div>
-					</div>
-					
-					<div class="product"> <!-- 상품출력 -->
-						<img class="product_img" alt="" src="img/store/영화관람권.jpg">
-						<div class="product_title">CGV영화관람권</div>
-						<div class="product_text">즐거운 경험은 CGVOX에서!</div>
-						<div class="product_price">12,000원</div>
-					</div>
 				</div>
 			</div><!-- 상품구역 end-->
 			
@@ -80,41 +48,41 @@
 						</div>
 						<div class="total_order">
 							<div class="total">
-								결제금액 <span class="totalPrice">33,000 원</span> 
+								결제금액 <span class="totalPrice">0 원</span> 
 							</div>
-							<div class="orderbtnDiv"> 결제하기 </div>
+							<div class="orderbtnDiv" onclick="modal_flex()"> 결제하기 </div>
 						</div>
 					</div><!-- 장바구니 상단 end -->
 					
 					<div class="basket_bottom"> <!-- 장바구니 하단 -->
-					
-						<div class="basket_product">
-							<img class="imgDiv" alt="" src="img/store/영화관람권.jpg">
-							<div class="basket_pinfo">
-								<div class="binfo_title">제품1</div>
-								<div class="binfo_price">11,000</div>
-							</div>
-						</div>
-						
-						<div class="basket_product">
-							<img class="imgDiv" alt="" src="img/store/영화관람권.jpg">
-							<div class="basket_pinfo">
-								<div class="binfo_title">제품2</div>
-								<div class="binfo_price">11,000</div>
-							</div>
-						</div>
-						
-						<div class="basket_product">
-							<img class="imgDiv" alt="" src="img/store/영화관람권.jpg">
-							<div class="basket_pinfo">
-								<div class="binfo_title">제품3</div>
-								<div class="binfo_price">11,000</div>
-							</div>
-						</div>
-						
 					</div><!-- 장바구니 하단 end -->
+					
+					
 				</div><!-- 장바구니 width 49% end -->
 			</div><!--  장바구니 구역 end -->
+		</div>
+		<!-- ---------------------------------------------------- -->
+		<div class="modal_wrap"> <!-- 모달 배경구역 -->
+			<div class="modal_box"> <!-- 모달박스 -->
+				
+				<h3 class="modal_h">결제완료</h3>
+				<div> <!-- 테이블 배경 틀 -->
+					<table class="ordertable">
+					
+						<tr> <th>극장명</th> <td>CGVOX</td> </tr>
+						<tr> <th>제품명</th> <td>제품이름</td> </tr>
+						<tr> <th>결제시간</th> <td>시간</td> </tr>
+						<tr> <th>결제금액</th> <td>총금액</td> </tr>
+						
+					</table>
+				</div>
+				
+				<div class="btns"> <!-- 버튼구역 -->
+					<button class="cancel">결제취소</button>
+					<button class="close">닫기</button>
+				</div>
+				
+			</div>
 		</div>
 		<!-- ---------------------------------------------------- -->
 	</div>
