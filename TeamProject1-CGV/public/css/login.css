@@ -14,13 +14,21 @@
 .tab_box{
 	background-color: #898987;
 	color: white;
-	padding: 10px 20px;
+	width: 100px;
+	height: 27px;
+	padding-top: 10px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	margin-right: 1px;
 	font-size: 13px;
 	font-weight: bold;
+	text-align: center;
 }
+
+.tab_box_select{
+	background-color: #fb4357 !important;
+}
+
 
 .login_box{
 	border-top: solid 2px #898987;
