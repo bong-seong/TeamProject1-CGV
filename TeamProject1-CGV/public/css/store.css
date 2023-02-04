@@ -77,7 +77,8 @@ li{
 
 .category_li{
 	white-space: nowrap;
-	font-family: 'twayair' !important;
+	font-family: 'SUIT-Regular' !important;
+	font-weight: bold;
 	font-size: 20px;
 	color: gray;
 	

@@ -1,6 +1,6 @@
 console.log('js실행')
 
-let categoryList = [  '콤보' , '팝콘' , '음료' , '스낵' , '영화관람권' , '기프트카드' , '플레이존' ]
+let categoryList = [  '콤보' , '팝콘' , '음료' , '스낵' , '영화관람권' , '기프트카드' , '지점한정메뉴' ]
 
 let productList = [
 	
@@ -19,8 +19,8 @@ let productList = [
 	{ category: '영화관람권' , name : '영화관람권' , text : `영화관람권텍스트` , price : 14000 , img : 'img/store/영화관람권.png' },
 	{ category: '기프트카드' , name : '기프트카드1' , text : `기프트카드1텍스트` , price : 14000 , img : 'img/store/기프트카드.png' },
 	{ category: '기프트카드' , name : '기프트카드2' , text : `기프트카드2텍스트` , price : 14000 , img : 'img/store/기프트카드2.png' },
-	{ category: '플레이존' , name : '[서울지점전용]라면팩' , text : `[서울지점전용]라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용라면팩.png' },
-	{ category: '플레이존' , name : '[서울지점전용]짜장라면팩' , text : `[서울지점전용]짜장라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용짜장라면팩.png' }
+	{ category: '지점한정메뉴' , name : '[서울지점전용]라면팩' , text : `[서울지점전용]라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용라면팩.png' },
+	{ category: '지점한정메뉴' , name : '[서울지점전용]짜장라면팩' , text : `[서울지점전용]짜장라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용짜장라면팩.png' }
 	
 	
 	
