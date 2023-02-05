@@ -223,7 +223,7 @@ li{
 }
 
 .rMovieInfoText{
-	width: 159px;
+	width: 170px;
 	
 }
 
@@ -353,7 +353,7 @@ li{
 }
 
 .oInfo{
-	display: flex;
+	
 	align-items :center;
 	
 	border-top: 1px solid #D3D3D3;
@@ -361,7 +361,10 @@ li{
 	border-bottom: 1px solid #D3D3D3;
 	padding-bottom : 5px;
 }
-
+.oinfoGroup{
+	display: flex;
+	align-items :center;
+}
 .oInfoImg{
 	width: 70px;
 	margin-right: 10px;
@@ -370,6 +373,17 @@ li{
 .oInfoName{
 	font-weight: bold;
 }
+
+.order_total{
+	
+	padding-top : 20px;
+	font-size: 18px;
+	padding-bottom : 20px;
+	border-bottom: 1px solid #D3D3D3;
+	text-align: center;
+	font-weight: bold;
+}
+
 .oBtns{
 	display: flex;
 	justify-content: center;
