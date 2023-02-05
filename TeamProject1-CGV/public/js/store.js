@@ -108,6 +108,7 @@ function cartList_print(j){
 	document.querySelector('.basket_bottom').innerHTML += html;
 	
 	//
+	console.log(productList[j])
 	cartListArray.push(productList[j])
 	
 	
@@ -228,6 +229,8 @@ function order(){
 	// 장바구니 추가한 제품 개수 출력
 	// 장바구니 총 금액 출력
 	cartCount_Total();
+	
+	console.log(orderListArray)
 }
 
 //닫기 버튼 이벤트리스너

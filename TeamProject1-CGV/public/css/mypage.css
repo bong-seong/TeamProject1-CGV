@@ -206,12 +206,13 @@ li{
 	background-color: white;
 	box-shadow: 0px 0px 10px #C0C0C0;
 	border-radius: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	
 }
 
 .rListWidth{
 	padding: 15%;
+	
 }
 
 /*------------예매내역 ---------------*/
@@ -305,9 +306,7 @@ li{
 	
 	border-radius: 20px;
 	
-	/*---상태변경시(영화 평점 남기기) ---*/
-	/* border: 1px solid #41276F;
-	color: #41276F; */
+	
 	
 	border: 1px solid #C0C0C0;
 	color:gray;
@@ -316,7 +315,12 @@ li{
 	margin: 40px 5px 0 5px;
 	width:100%;	
 }
-
+.expiredBtn{
+	/*---상태변경시(영화 평점 남기기) ---*/
+	border: 1px solid #41276F;
+	color: #41276F;
+	font-weight: bold;
+}
 
 
 /*------------스토어구매내역 ---------------*/
