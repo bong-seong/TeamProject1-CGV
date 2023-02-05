@@ -65,9 +65,68 @@ function tabPrint( i ){
 				<div class="cj_one_box">
 					<p><span>CJ ONE 회원이 아니신가요?</span> 회원가입하시고 다양한 혜택을 누리세요!</p>
 					<div class="cj_one_btn_box">
-						<button onclick="join_member()> CJ ONE 회원가입하기 </button>
+						<button onclick="join_member()"> CJ ONE 회원가입하기 </button>
 					</div>
+				</div>
+				<div class="join_member_modal">
+						<div class="join_main_box">
+							<div class="join_box_top">
+								<div class="join_title">회원가입</div>
+								<div onclick="join_cancle()" class="join_cancle">X</div>
+							</div>
+							<table class="join_table">
+								<thead>
+									<tr>
+										<th colspan="2">모든 항목은 필수 입력사항입니다.</th>
+									</tr>						
+								</thead>
+								<tbody>
+									<tr>
+										<td width="15%">법정생년월일(8자리)</td>
+										<td width="85%" class="birth"><input type="text"></td>
+									</tr>
+									<tr>
+										<td>휴대폰번호</td>
+										<td class="phone_num">
+											<select>
+												<option>010</option>
+												<option>011</option>
+												<option>016</option>
+												<option>017</option>
+												<option>018</option>
+												<option>019</option>
+											</select>
+											- <input type="text"> -
+											<input type="text">
+											<button type="button">인증번호받기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>인증번호(4자리)</td>
+										<td class="auth_num">
+											<input type="text">
+											<button type="button">인증확인</button>
+										</td>
+									</tr>
+									<tr>
+										<td>비밀번호(4자리)</td>
+										<td class="temp_pwd"><input type="password"></td>
+									</tr>
+									<tr>
+										<td>비밀번호확인</td>
+										<td class="temp_pwd_check"><input type="password"></td>
+									</tr>
+									<tr>
+										<td colspan="2" class="join_btn">
+											<button type="button" onclick="join_cancle()"> 가입하기 </button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>				
 				</div>`
+				
 		document.querySelector('.login_box_js').innerHTML = html;
 		document.querySelector('.none_member_box').innerHTML = '';
 		document.querySelector('.none_mb_tk_check').innerHTML = '';
@@ -247,17 +306,19 @@ function tabPrint( i ){
 		document.querySelector('.none_member_box').innerHTML = '';
 		resizing.classList.add('login_main_box_none_member')
 	}
-	
+		
 }
 
 function join_member(){
-	// 1. 모달 배경 구역 css 변경해서 모달 보이기 
 	document.querySelector('.join_member_modal').style.display='flex'
 }
 
-document.querySelector('.join_cancle').addEventListener('click', (e)=>{
+function join_cancle(){
 	document.querySelector('.join_member_modal').style.display='none'
-})
+}
+
+
+
 
 
 
