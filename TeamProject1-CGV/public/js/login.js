@@ -2,7 +2,7 @@
 let category = [ "로그인" , "비회원 예매" , "비회원 예매확인" ]
 
 loginTab()
-select_tab(0)
+// select_tab(0)
 // 1. 로그인 탭 구성 함수
 function loginTab(){
 	
@@ -65,9 +65,7 @@ function tabPrint( i ){
 				<div class="cj_one_box">
 					<p><span>CJ ONE 회원이 아니신가요?</span> 회원가입하시고 다양한 혜택을 누리세요!</p>
 					<div class="cj_one_btn_box">
-						<a href="#">
-							<button> CJ ONE 회원가입하기 </button>
-						</a>
+						<button onclick="join_member()> CJ ONE 회원가입하기 </button>
 					</div>
 				</div>`
 		document.querySelector('.login_box_js').innerHTML = html;
@@ -250,8 +248,17 @@ function tabPrint( i ){
 		resizing.classList.add('login_main_box_none_member')
 	}
 	
-	
 }
+
+function join_member(){
+	// 1. 모달 배경 구역 css 변경해서 모달 보이기 
+	document.querySelector('.join_member_modal').style.display='flex'
+}
+
+document.querySelector('.join_cancle').addEventListener('click', (e)=>{
+	document.querySelector('.join_member_modal').style.display='none'
+})
+
 
 
 
