@@ -2,7 +2,7 @@
 let category = [ "로그인" , "비회원 예매" , "비회원 예매확인" ]
 
 loginTab()
-// select_tab(0)
+select_tab(0)
 // 1. 로그인 탭 구성 함수
 function loginTab(){
 	
