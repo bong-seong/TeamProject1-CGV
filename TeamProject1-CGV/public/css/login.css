@@ -5,6 +5,9 @@
 	width: 580px;
 	margin: 0 auto;
 }
+.login_main_box_none_member{
+	width: 980px !important;
+}
 
 .login_tab{
 	display: flex;
@@ -217,6 +220,11 @@
 	color: #222222;
 }
 
+.birth input{
+	width: 115px; height: 26px;
+	border: solid 1px #cacac6;
+}
+
 .phone_num select{
 	width: 55px; height: 30px;
 	text-align: center;
@@ -264,6 +272,9 @@
 	font-weight: bold;
 }
 
+.none_mb_tk_check{
+	border-top: solid 2px #898987;
+}
 
 .none_mb_noti_box{
 	width: 100%;
@@ -295,9 +306,100 @@
 }
 
 
+.none_mb_tk_check{ 
+	width: 980px;
+	margin: 0 auto;
+}
 
+.tk_check_main_table{ 
+	border: solid 1px #e2e2e0;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 45px;
+}
+.none_mb_tk_check_top h3{
+	font-size: 15px;
+	color: #222222;
+	margin: 40px 0px 10px 0px;
+}
 
+.mb_tk_check_noti{
+	font-size: 13px;
+	color: #222222;
+}
 
+.time_noti{ list-style: none; padding: 0px; }
+
+.none_mb_tk_check_top table{ border-collapse: collapse;}
+.mb_tk_table_h th{
+	background-color: #e2e2e0;
+	padding: 15px 20px;
+	color: #222222;
+	font-size: 15px;
+}
+
+.tk_check_table{
+	margin: 40px 0px;
+}
+
+.info_table_td{
+	border-right: solid 1px #e2e2e0;
+}
+
+.tk_check_table{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.tk_check_table th{
+	font-size: 13px;
+	border-bottom: solid 2px #8a8a8a;
+	padding: 5px 0px;
+}
+
+.tk_check_table td{
+	padding: 15px 0px;
+	border-bottom: solid 1px #e2e2e0;
+	color: #222222;
+	font-size: 12px;
+}
+
+.table_check_btn_box{
+	text-align: center;
+}
+.table_check_btn_box button{
+	margin: 10px 0px 200px 0px;
+	width: 125px; height: 25px;
+	background-color: #fb4357;
+	color: white;
+	border: none;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.pwd_find_box{
+	vertical-align: top;
+}
+
+.pwd_find_box p{
+	font-size: 13px;
+	color: #222222;
+	padding: 40px 0px 20px 0px;
+	border-bottom: solid 2px #898987;
+	width: 80%;
+	margin: 0 auto;
+	line-height: 25px;
+}
+.pwd_find_box button{
+	margin: 45px;
+	font-size: 12px; color: #333333;
+	width: 170px; height: 25px;
+	text-align: center;
+	border: solid 2px #333333;
+	font-weight: bold;
+}
 
 
 
