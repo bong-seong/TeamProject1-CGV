@@ -196,19 +196,7 @@ function rList_print(){
 }
 
 /*---------------------------------------------------*/
-/*
-let orderProductPrice = []
-for ( let n = 0 ; n < orderProductName.length ; n++){
-		for ( let p = 0 ; p < productList.length ; p++ ){				
-			if ( orderProductName[n] == productList[p].name ){
-				orderProductPrice.push(productList[p].name)
-			}	
-		}
-	}	
-	
-	console.log(orderProductName)
-	console.log(orderProductPrice)*/
-/*---------------------------------------------------*/			
+		
 			
 // 구매내역 출력 함수 [ js 실행시 함수 실행 ]
 function storeOrderList(){
@@ -255,6 +243,7 @@ function storeOrderList(){
 				} 
 			})
 			orderProductCount.push(count)
+			
 			productList.forEach( (o) => {
 				if ( orderProductName[n] == o.name ) {
 					orderProductImg.push(o.img)	
