@@ -343,9 +343,6 @@
 	font-weight: bold;
 }
 
-.none_mb_tk_check{
-	border-top: solid 2px #898987;
-}
 
 .none_mb_noti_box{
 	width: 100%;
@@ -391,7 +388,10 @@
 .none_mb_tk_check_top h3{
 	font-size: 15px;
 	color: #222222;
-	margin: 40px 0px 10px 0px;
+	padding: 40px 0px 10px 0px;
+	width: 100%;
+	border-top: solid 2px #898987;
+	margin-top: 0px;
 }
 
 .mb_tk_check_noti{
