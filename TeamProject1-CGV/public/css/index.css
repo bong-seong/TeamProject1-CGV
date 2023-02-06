@@ -13,36 +13,26 @@
 }
 
 /*공통 */
- * {/* background-color:white;
- 	 text-align:left;
- 	 text-decoration: none; */
- 	 font-family: 'SUIT-Regular'
- }
+ * { font-family: 'SUIT-Regular' }
 
 
-@font-face {
-    font-family: 'SUIT-Regular'; 
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 /* 맨위 광고 */
 .cgv_ad_top{
 	background-color: #DEDEDE;
 	text-align: center;
-	height: 80px;
 	
 }
 
 /*헤더 전체구역설정  */
 .header {
-    position: relative;
+    position: sticky;
     z-index: 101;
+    top:0px; left: 0px; 
 }
 
 /* logo|| 광고 로그인 회원가입 my_cgv 고객센터   */
 .header_top {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background-color: #fff;
     border-bottom: 1px solid #eee;
 }
@@ -128,15 +118,6 @@
     transform: translate(-50%, 0);
 }
 
-#index{
-	display: flex; 
-	justify-content: space-between;
-	position : sticky;		/* 해당 요소가 화면에 나갔을때 위치 고정 */
-	top:0px;	
-		z-index: 1;		
-}
-
-
 
 /* 헤더 하위목록 */
 
@@ -153,8 +134,14 @@ a {
 .h_menu:hover .menu_list{ display: none; }
 
 
-.menu_list{ width:1040px; display: flex; margin: 0 auto;
-position: relative; 
+#mainbox{ border-bottom: solid 1px #ebebeb; z-index: 103; }
+
+.menu_list{ 
+	width:1040px; display: flex; 
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 15px;
+	
 }
 
 
@@ -171,8 +158,9 @@ position: relative;
 
 
 .menu_list2{
+	background-color: white;
 	width:1040px; display: flex; 
-	position: absolute; display: none;  top : 40px; 
+	position: absolute; display: none;  top : 25px; 
 	left: 0px;
 	
 }	
@@ -209,7 +197,7 @@ position: relative;
 .tmffoa{
 	border-bottom-style: none;
 	border-top-style: none;
-
+	margin-left: 100px;
 }
 
 #ejdzm{
@@ -219,6 +207,8 @@ position: relative;
 #ejdzm button{
 	border: none;
 	padding-left: 20px;
+	background: white;
+	
 }
 /*
 	footer
