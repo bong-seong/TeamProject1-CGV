@@ -9,6 +9,8 @@
 	width: 980px !important;
 }
 
+button{ background-color: white;}
+
 .login_tab{
 	display: flex;
 	justify-content: flex-start;
@@ -197,6 +199,8 @@
 	font-weight: bold;
 	text-align: center; 
 }
+
+.none_member_table td{ text-align: left ;}
 
 .none_member_box{
 	width: 980px; margin: 0 auto;
@@ -472,6 +476,7 @@
 	text-align: center;
 	border: solid 2px #333333;
 	font-weight: bold;
+	background-color: white;
 }
 
 .join_table tbody td{

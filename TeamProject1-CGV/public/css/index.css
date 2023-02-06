@@ -399,7 +399,7 @@ a {
 }
 
 .bt1{ background-color: white; color: #222222; }
-.bt2{ background-color: #ff6060; color: white; }
+.bt2{ background-color: rgb(80, 46, 141); color: white; }
 
 .event_box{
 	width: 1040px; margin: 0 auto;
