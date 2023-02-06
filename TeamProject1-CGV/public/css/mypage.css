@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+/*--------웹폰트------------  */
+
+
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------기본값--------*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'SUIT-Regular';
+}
+li{
+	list-style: none;
+}
+
+/*----------글씨칼라,굵기------------*/
+.bold{
+	font-weight: bold;
+}
+.colorpoint{
+	color: #41276F;
+}
+
+
+/*-------마이페이지전체-----------*/
+
+.mypageWrap{
+	width: 1040px;
+	margin: 0 auto;
+	
+}
+.profile{
+	background-color: #F8F8F8; 
+	width: 882px;
+	height: 390px;
+	margin: 0 auto;
+	padding: 40px 80px 0px 80px;
+	box-sizing: border-box;
+	
+}
+
+/*-------상단구역-----------*/
+
+/*-------프로필구역(이미지+이름,닉네임+vip등급)---------*/
+.profile_info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+	/* border: 1px solid blue; */
+}
+/*-------이름구역---------*/
+
+.namebox{
+	/* border: 1px solid red; */
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.name{
+	padding-bottom:15px;
+	border-bottom: 1px solid black;
+}
+
+.nameNickname{
+	padding-bottom: 10px;
+}
+/*----nameNickname 하위요소----*/
+.nameKor{
+	font-family: 'twayair';
+	font-size: 30px;
+	margin-right: 12px;
+	
+}
+.nameEng{
+	font-size: 15px;
+	margin-right: 15px;
+	color: gray;
+}
+.nickname{
+	font-size: 15px;
+}
+.nicknametitle{
+	font-weight: bold;
+	color : gray;
+}
+
+/*-------------------------*/
+
+.grade{
+	padding-top:15px; 
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+
+/*-------vip점수---------*/
+.vip_score{
+	border-right: 1px solid #E1E1E1;
+	width: 200px;
+	text-align: center;
+	padding-right: 30px;
+}
+
+.profileH3{
+	font-size: 25px;
+	margin-bottom: 20px;
+	color: #41276F;
+}
+
+.ScoreContent{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 14px;
+	border-bottom: 2px solid #C0C0C0;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+/*------------쿠폰+포인트 구역 ---------------*/
+
+.couponPointDiv{
+	display: flex;
+	justify-content: space-between;
+	/* border: 1px solid blue; */
+}
+
+.coupon{
+	width: 200px;
+	text-align: center;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.point{
+	border-left: 1px solid #E1E1E1;
+	width: 200px;
+	text-align: center;
+	padding-left: 30px;
+}
+
+/*------------mypage_content(예매내역+스토어구매내역) ---------------*/
+.mypage_content{
+	
+	width: 882px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	padding: 40px 20px;
+	box-sizing: border-box;
+	
+}
+
+/*--------예매내역,스토어구매내역 공통css-----------*/
+.reservation , .purchase{
+	/* border: 2px solid #C0C0C0; */
+	/* background-color: #41276F; */
+	width: 48%;
+	border-radius: 10px;
+	height: 800px;
+	
+	
+} 
+
+.h3Width{
+	padding: 0 100px;
+/* 	background-color: #41276F; */
+	
+	border: 3px solid #41276F;
+	border-radius: 30px;
+	height: 52px;
+	margin-bottom: 20px;
+}
+
+.contentH3{
+	font-size: 25px;
+	margin-bottom: 20px;
+	/* color: #41276F; */
+	text-align: center;
+	padding: 10px 0;
+
+	color: #41276F;
+	
+}
+
+
+
+/*--------예매내역,구매내역 공통박스구역 ----------*/
+.rListDiv{
+	/* background-color: #D3D3D3; */
+	background-color: white;
+	box-shadow: 0px 0px 10px #C0C0C0;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	
+}
+
+.rListWidth{
+	padding: 15%;
+	
+}
+
+/*------------예매내역 ---------------*/
+.rListContent{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.rMovieInfoText{
+	width: 170px;
+	
+}
+
+.rMovieImg{
+	width: 90px;
+}
+
+.rMovieName{
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.rMovieType{
+	color: 	#808080; 
+	/* margin-bottom: 52px; */
+}
+
+.rTheaterNum{
+	color: #41276F;
+	font-weight: bold;
+}
+
+.rTheater{
+	/* padding-bottom: 20px; */
+	margin-bottom: 20px;
+	border-top: 1px solid #D3D3D3;
+	padding-top : 20px;
+	border-bottom: 1px solid #D3D3D3;
+	padding-bottom : 20px;
+}
+
+.rDate{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.rStartTime{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.rEndTime{
+	font-weight: bold;
+}
+.rTime{
+	margin-bottom: 20px;
+}
+.rPerson{
+	margin-bottom: 15px;
+}
+
+.rPersonNum{
+	font-weight: bold;
+}
+
+.rSeat{
+	background-color: #eeeeee;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.rNumber{
+	
+	color: #808080;
+	font-size: 14px;
+}
+
+.rBtns{
+	display: flex;
+	justify-content: center;
+	/* padding: 0 10px; */
+}
+.rCancelBtn{
+	text-align: center;
+	font-weight: bold;
+	
+	padding: 5px 15px;
+	
+	border-radius: 20px;
+	
+	
+	
+	border: 1px solid #C0C0C0;
+	color:gray;
+	font-weight: normal;
+	
+	margin: 40px 5px 0 5px;
+	width:100%;	
+}
+.expiredBtn{
+	/*---상태변경시(영화 평점 남기기) ---*/
+	border: 1px solid #41276F;
+	color: #41276F;
+	font-weight: bold;
+}
+
+
+/*------------스토어구매내역 ---------------*/
+
+.oNuminfo{
+	text-align: center;
+	
+}
+
+.oNumBox{
+	background-color: #41276F;
+	color:white;
+	padding: 5px 15px;
+	border-radius: 20px;
+	font-weight: bold;
+	margin-bottom: 10px; 
+}
+
+.oNum{
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.oDate{
+	border-top: 1px solid #D3D3D3;
+	padding-top : 5px;
+	font-size: 15px;
+	padding-bottom : 5px;
+}
+
+.oInfo{
+	
+	align-items :center;
+	
+	border-top: 1px solid #D3D3D3;
+	padding-top : 5px;
+	border-bottom: 1px solid #D3D3D3;
+	padding-bottom : 5px;
+}
+.oinfoGroup{
+	display: flex;
+	align-items :center;
+}
+.oInfoImg{
+	width: 70px;
+	margin-right: 10px;
+}
+
+.oInfoName{
+	font-weight: bold;
+}
+
+.order_total{
+	
+	padding-top : 20px;
+	font-size: 18px;
+	padding-bottom : 20px;
+	border-bottom: 1px solid #D3D3D3;
+	text-align: center;
+	font-weight: bold;
+}
+
+.oBtns{
+	display: flex;
+	justify-content: center;
+	padding: 0 10px;
+}
+.cancelBtn{
+	text-align: center;
+	/* font-weight: bold; */
+	
+	padding: 5px 15px;
+	
+	
+	border: 1px solid #C0C0C0;
+	color:gray;
+	
+	margin: 30px 5px 0 5px;
+	width:50%;
+}
+
+.stateColor{
+	border-color: #41276F;
+	color: #41276F;
+	font-weight: bold;
+	/* background-color: #F5B21C;
+	color: #41276F;
+	border: none;  */
+}
