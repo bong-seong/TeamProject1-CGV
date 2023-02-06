@@ -82,8 +82,8 @@ function tabPrint( i ){
 								</thead>
 								<tbody>
 									<tr>
-										<td width="20%">법정생년월일(8자리)</td>
-										<td width="80%" class="birth"><input type="text"></td>
+										<td width="25%">법정생년월일(8자리)</td>
+										<td width="75%" class="birth"><input type="text"></td>
 									</tr>
 									<tr>
 										<td>휴대폰번호</td>

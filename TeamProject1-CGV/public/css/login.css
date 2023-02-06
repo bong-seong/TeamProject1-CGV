@@ -121,9 +121,21 @@
 	background-color: white;
 }
 .join_main_box table{
-	width: 100%;
+	width: 87%;
 	margin: 0 auto;
+	border-collapse: collapse;
 }
+.join_main_box table thead th{
+	border-bottom: solid 2px #898987;
+	color: #222222;
+	font-size: 15px;
+}
+
+.join_main_box table tbody td{
+	border-bottom: solid 1px #b8b6aa;
+	padding: 30px 0px;
+}
+
 .join_box_top{
 	display: flex; justify-content: space-between;
 	padding: 50px;
@@ -143,7 +155,8 @@
 	border: solid 2px #fb4357;
 	color: #fb4357;
 	font-weight: bold;
-	width: 150px;
+	width: 120px;
+	height: 30px;
 	text-align: center;
 	margin: 50px 0px 50px 0px;
 }
