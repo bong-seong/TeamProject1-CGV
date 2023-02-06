@@ -13,9 +13,9 @@
 }
 
 /*공통 */
- * {background-color:white;
+ * {/* background-color:white;
  	 text-align:left;
- 	 text-decoration: none;
+ 	 text-decoration: none; */
  	 font-family: 'SUIT-Regular'
  }
 
@@ -30,6 +30,7 @@
 .cgv_ad_top{
 	background-color: #DEDEDE;
 	text-align: center;
+	height: 80px;
 	
 }
 
@@ -126,6 +127,15 @@
     white-space: nowrap;
     transform: translate(-50%, 0);
 }
+
+#index{
+	display: flex; 
+	justify-content: space-between;
+	position : sticky;		/* 해당 요소가 화면에 나갔을때 위치 고정 */
+	top:0px;	
+		z-index: 1;		
+}
+
 
 
 /* 헤더 하위목록 */
