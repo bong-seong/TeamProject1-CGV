@@ -259,7 +259,7 @@ position: relative;
     vertical-align: top;
 }
 
-/* ==========================================================*/
+/* =========================================================================*/
 
 .videobox{
 	background-color: black;
@@ -342,6 +342,7 @@ position: relative;
 	padding: 5%;
 	font-size: 18px; color: #222222;
 	font-weight: bold;
+	text-align: center;
 }
 
 .movie_info_box{
@@ -362,7 +363,6 @@ position: relative;
 	position: absolute;
 	top: 0; left: 0;
 	background-color: rgba(0, 0, 0, 0.5) !important;
-	padding: 70px 0px;
 	display: none;
 	border-radius: 15px;
 }
@@ -371,7 +371,15 @@ position: relative;
 	width: 120px; height: 35px;
 	border: none; border-radius: 5px;
 	font-size: 14px;
+	margin-bottom: 5px;
+	text-align: center;
 }
+
+.btn_box{ 
+	position: absolute;
+	top: 70px; left: 20px;
+}
+
 .bt1{ background-color: white; color: #222222; }
 .bt2{ background-color: #ff6060; color: white; }
 
