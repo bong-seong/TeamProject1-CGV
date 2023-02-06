@@ -1,7 +1,4 @@
-console.log('js실행')
-
 let productList = [
-	
 	{ category: '콤보' , name : '더블콤보' , text : `더블콤보텍스트` , price : 11000 , img : 'img/store/더블콤보.png' },
 	{ category: '콤보' , name : '러브콤보' , text : `스위트콤보텍스트` , price : 12000 , img : 'img/store/러브콤보.png' },
 	{ category: '콤보' , name : '핫도그콤보' , text : `스몰세트텍스트` , price : 13000 , img : 'img/store/핫도그콤보.png'	},
@@ -19,19 +16,14 @@ let productList = [
 	{ category: '기프트카드' , name : '기프트카드2' , text : `기프트카드2텍스트` , price : 14000 , img : 'img/store/기프트카드2.png' },
 	{ category: '지점한정메뉴' , name : '[서울지점전용]라면팩' , text : `[서울지점전용]라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용라면팩.png' },
 	{ category: '지점한정메뉴' , name : '[서울지점전용]짜장라면팩' , text : `[서울지점전용]짜장라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용짜장라면팩.png' }
-	
-	
-	
 ]
 
 let personNumList = [ // 예매내역 [ 2건 ] 가정
 	{ 성인 : 1 , 어린이 : 0 , 시니어 : 0 ,  장애인 : 0 , 국가유공자 : 0 } ,
-	{ 성인 : 1 , 어린이 : 1 , 시니어 : 1 ,  장애인 : 0 , 국가유공자 : 0 }
+	{ 성인 : 1 , 어린이 : 1 , 시니어 : 1 ,  장애인 : 0 , 국가유공자 : 0 } 
 ]
 
-
 let Ticket_List = [ // 예매내역 [ 2건 ] 가정 
-
 	{ 	mName : '장화신은 고양이: 끝내주는 모험' , 
 		mType: '2D' , 
 		mImg : 'img/장화신은고양이.jpg' , 
@@ -57,7 +49,6 @@ let Ticket_List = [ // 예매내역 [ 2건 ] 가정
 		seat : 'E8 , E9 , E10 ' , 
 		tikcetNum : '0090-0822-5210-347' , 
 		state : true }
-	
 ]
 
 //cartListArray -> orderListArray로 옮김 가정 [ 주문 2건 ]
@@ -68,63 +59,49 @@ let cartListArray1 = [
 ]
 
 let cartListArray2 = [
-	
 	{ category: '음료' , name : '콜라' , price : 9000 , img : 'img/store/콜라.png' } ,
 	{ category: '음료' , name : '콜라' , price : 9000 , img : 'img/store/콜라.png' } ,
 	{ category: '음료' , name : '콜라' , price : 9000 , img : 'img/store/콜라.png' } ,
 	{ category: '팝콘' , name : '팝콘M' , price : 8000 , img : 'img/store/팝콘M.png' },
 	{ category: '팝콘' , name : '팝콘M' , price : 8000 , img : 'img/store/팝콘M.png' }
-	
 ]
-
 
 // cartListArray [ 2건 ] total 계산 가정
 total_1 = 0;
 cartListArray1.forEach( (o) => {
 	total_1 += o.price
-	
 })
 
 total_2 = 0;
 cartListArray2.forEach( (o) => {
 	total_2 += o.price
-	
 })
 
 
 //주문내역 배열
 let orderListArray = [
-	{
-		no : 13 ,
+	{	no : 13 ,
 		time : '2023-02-08(수) 15:45:15' ,
 		products : cartListArray1 ,
 		total : total_1.toLocaleString() ,
 		state : 2
 		// state 0:주문확인중 , 1:조리중 , 2:조리완료 , 3:주문완료
-		
 	},
-	
-	{
-		no : 7 ,
+	{	no : 7 ,
 		time : '2023-01-05(목) 9:05:15' ,
 		products : cartListArray2 ,
 		total : total_2.toLocaleString() ,
 		state : 3
 		// state 0:주문확인중 , 1:조리중 , 2:조리완료 , 3:주문완료
 	}
-	
 ]
-
-
 
 // js 실행시 함수실행
 rList_print();
 storeOrderList();
-
 /*---------------------------------------------------*/
 // 예매내역 출력 함수 [ js 실행시 함수 실행 ]
 function rList_print(){
-	console.log('rList_print 함수실행')
 	html = ''
 	for ( let i = 0 ; i < Ticket_List.length ; i++ ){
 	let 성인 = Ticket_List[i].personNum.성인
@@ -136,11 +113,7 @@ function rList_print(){
 	
 	html += `
 			<div class="rListDiv">
-			
-			
 				<div class="rListWidth"> <!-- 예매내역 박스 가로길이 -->
-					
-											
 						<div class="rListContent">
 							<div class="rMovieInfo">
 									<div class="rMovieInfoText">
@@ -165,16 +138,12 @@ function rList_print(){
 						<div class="rSeat">${Ticket_List[i].seat}</div>
 						<div class="rNumber">예매번호: ${Ticket_List[i].tikcetNum}</div>
 				`
-				
-
 				if ( Ticket_List[i].state == false ){
 						html +=		`		
 											<div class="rBtns">
 								 				<div class="rCancelBtn">주문취소</div>			 				
 							 				</div>
-							 	
-							 		</div>
-								
+									</div>
 								</div>
 								`
 				} else if ( Ticket_List[i].state == true ){
@@ -182,22 +151,14 @@ function rList_print(){
 											<div class="rBtns">
 								 				<div class="rCancelBtn expiredBtn">평점 남기기</div>			 				
 							 				</div>
-							 	
 							 		</div>
-								
 								</div>
 								`
 				}
-						
 		document.querySelector('.rListInnerHTML').innerHTML = html
-		
 	}
-	
 }
-
 /*---------------------------------------------------*/
-		
-			
 // 구매내역 출력 함수 [ js 실행시 함수 실행 ]
 function storeOrderList(){
 	let html = ''
@@ -207,18 +168,15 @@ function storeOrderList(){
 		html += `<div class="rListDiv"> <!-- store주문내역 흰바탕 -->
 				 		<div class="rListWidth"> <!-- 스토어주문내역 박스 가로길이 -->
 				 			<div>
-				 			
-				 				<div class="oNuminfo"> 
+								<div class="oNuminfo"> 
 				 					<div class="oNumBox">주문번호</div> 
 				 					<div class="oNum">${orderListArray[i].no}</div>
 				 					<div class="oDate">${orderListArray[i].time}</div>
 				 				</div>
 				 				<div class="oInfo">
-				 				
-				 `
+				  `
 		// i번째 주문객체 안에 주문제품배열
 		// orderListArray[i].products
-		
 		let orderProductName = []
 		let orderProductCount = []
 		let count = 0;
@@ -226,13 +184,9 @@ function storeOrderList(){
 		
 		for ( let j = 0 ; j < orderListArray[i].products.length ; j++ ){
 			// i번째 주문객체 안에 주문제품배열의 j번째 객체
-			
-			
-			
 			if ( orderProductName.indexOf(orderListArray[i].products[j].name)<0){
 			orderProductName.push(orderListArray[i].products[j].name)
 			}
-			
 		}
 
 		for ( let n = 0 ; n < orderProductName.length ; n++ ){
@@ -249,22 +203,14 @@ function storeOrderList(){
 					orderProductImg.push(o.img)	
 				} 
 			})		
-		
 		}
-			
-		console.log(orderProductName)
-		console.log(orderProductCount)
-		console.log(orderProductImg)
 		
 		let orderNameCountimg = {
-			
 			name : orderProductName , 
 			count : orderProductCount ,
 			img : orderProductImg
 		}
-		console.log (orderNameCountimg)
-			
-		
+				
 		for ( let m = 0 ; m < orderNameCountimg.name.length ; m++ ){
 			html +=	`				
 						<div class="oinfoGroup">
@@ -276,7 +222,6 @@ function storeOrderList(){
 			 					<div> <span class="oInfoName">${orderNameCountimg.name[m]}</span> / <span>${orderNameCountimg.count[m]}개</span> </div>
 			 				</div>
 		 				</div>
-				
 						`
 			}
 			
@@ -286,61 +231,47 @@ function storeOrderList(){
 				 		`
 			if ( orderListArray[i].state == 0 ){
 				html +=		`
-					 
-							 				<div class="oBtns">
+					 						<div class="oBtns">
 								 				<div class="cancelBtn stateColor">주문확인중</div>
 												<div class="cancelBtn">주문취소</div>			 				
 							 				</div>
-							 				
 							 			</div>
 							 		</div>
 								</div>
-					
 							`
 			} else if ( orderListArray[i].state == 1 ){
 				html +=		`
-					 
-							 				<div class="oBtns">
+					 						<div class="oBtns">
 								 				<div class="cancelBtn stateColor">조리중</div>
 												<div class="cancelBtn">주문취소불가</div>			 				
 							 				</div>
-							 				
 							 			</div>
 							 		</div>
 								</div>
-					
 							`
 			} else if ( orderListArray[i].state == 2 ){
 				html +=		`
-					 
-							 				<div class="oBtns">
+					 						<div class="oBtns">
 								 				<div class="cancelBtn stateColor">조리완료</div>
 												<div class="cancelBtn">픽업위치</div>			 				
 							 				</div>
-							 				
 							 			</div>
 							 		</div>
 								</div>
-					
 							`
 			} else if ( orderListArray[i].state == 3 ){
 				html +=		`
-					 
-							 				<div class="oBtns">
+					 						<div class="oBtns">
 								 				<div class="cancelBtn stateColor">픽업완료</div>
 												<div class="cancelBtn">주문상세</div>			 				
 							 				</div>
-							 				
 							 			</div>
 							 		</div>
 								</div>
-					
 							`
 			}
-			
 	}
 	document.querySelector('.storeListInnerHTML').innerHTML = html;
-	
 }
 
 
