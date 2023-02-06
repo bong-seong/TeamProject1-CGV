@@ -477,5 +477,9 @@
 	font-size: 13px;
 	color: #222222;
 }
+.join_table tbody span {
+	color: #898987;
+	font-size: 12px;
+}
 
 

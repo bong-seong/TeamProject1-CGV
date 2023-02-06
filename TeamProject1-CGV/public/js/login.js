@@ -82,7 +82,13 @@ function tabPrint( i ){
 								</thead>
 								<tbody>
 									<tr>
-										<td width="25%">법정생년월일(8자리)</td>
+										<td width="25%">이름</td>
+										<td width="75%" class="birth"><input type="text"></td>
+									</tr>
+									<tr>
+										<td width="25%">법정생년월일(8자리) <br/>
+											<span> ex) 20230206 </span>
+										</td>
 										<td width="75%" class="birth"><input type="text"></td>
 									</tr>
 									<tr>
@@ -109,7 +115,7 @@ function tabPrint( i ){
 										</td>
 									</tr>
 									<tr>
-										<td>비밀번호(4자리)</td>
+										<td>비밀번호(8자리)</td>
 										<td class="temp_pwd"><input type="password"></td>
 									</tr>
 									<tr>
