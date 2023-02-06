@@ -120,6 +120,10 @@
 	width: 40%;
 	background-color: white;
 }
+.join_main_box table{
+	width: 100%;
+	margin: 0 auto;
+}
 .join_box_top{
 	display: flex; justify-content: space-between;
 	padding: 50px;
@@ -133,6 +137,15 @@
 	font-weight: bold;
 	width: 24px;
 	text-align: center;
+}
+
+.join_btn button{
+	border: solid 2px #fb4357;
+	color: #fb4357;
+	font-weight: bold;
+	width: 150px;
+	text-align: center;
+	margin: 50px 0px 50px 0px;
 }
 
 .join_table{
@@ -447,6 +460,9 @@
 	font-weight: bold;
 }
 
-
+.join_table tbody td{
+	font-size: 13px;
+	color: #222222;
+}
 
 
