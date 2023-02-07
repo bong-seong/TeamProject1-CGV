@@ -34,7 +34,7 @@ function movie_print(){
 		html += ` <div class="item" >					
 					<a href="movie_view.html"><img class="m_img" src="img/${o.img}" ></a>
 					<div class="m_name"> ${o.name}	</div>
-					<div class="m_al"> <span> 예매율 ${ o.예매율 }%</span> <span>|</sapn><span class="al"> <img src="img/main_page/황금알.png"> ${ o.egg }%</span></div>
+					<div class="m_al"> <span> 예매율 ${ o.예매율 }%</span> <span>|</sapn><span class="al2"> <img src="img/main_page/황금알.png"> ${ o.egg }%</span></div>
 					<div class="m_score"> 평점  <span class="percent"> ${o.평점}</span> </div>
 					<div class="m_date"> ${o.개봉일} 개봉 	</div>
 					<div > <a href="movie_view.html"> <button class="viewbtn" type="button"> 상세보기 </button> </a> </div>
