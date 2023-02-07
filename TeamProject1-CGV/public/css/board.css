@@ -1,6 +1,6 @@
 @charset "EUC-KR";
 
- * {background-color:white;
+ * {
  	 text-align:left;
  	 text-decoration: none;
  	 font-family: 'SUIT-Regular'
@@ -82,10 +82,8 @@
 }
 
 .banner {  display: flex; 
-
-		  background-color:#41276F;
-		color: white;
-				
+	background-color:#41276F;
+	color: white;			
 }
 
 
