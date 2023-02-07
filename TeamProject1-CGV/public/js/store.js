@@ -1,22 +1,22 @@
 let categoryList = [  '콤보' , '팝콘' , '음료' , '스낵' , '영화관람권' , '기프트카드' , '지점한정메뉴' ]
 let productList = [
-	{ category: '콤보' , name : '더블콤보' , text : `더블콤보텍스트` , price : 11000 , img : 'img/store/더블콤보.png' },
-	{ category: '콤보' , name : '러브콤보' , text : `스위트콤보텍스트` , price : 12000 , img : 'img/store/러브콤보.png' },
-	{ category: '콤보' , name : '핫도그콤보' , text : `스몰세트텍스트` , price : 13000 , img : 'img/store/핫도그콤보.png'	},
-	{ category: '콤보' , name : '나쵸콤보' , text : `CGV콤보텍스트` , price : 14000 , img : 'img/store/나쵸콤보.png' } ,
-	{ category: '콤보' , name : '맛밤콤보' , text : `CGV콤보텍스트` , price : 14000 , img : 'img/store/맛밤콤보.png' }, 
-	{ category: '스낵' , name : '핫도그' , text : `핫도그텍스트` , price : 7000 , img : 'img/store/핫도그.png' } ,
-	{ category: '스낵' , name : '나쵸' , text : `나쵸텍스트` , price : 7000 , img : 'img/store/나쵸.png' } ,
-	{ category: '스낵' , name : '맛밤' , text : `맛밤텍스트` , price : 7000 , img : 'img/store/맛밤.png' },
-	{ category: '팝콘' , name : '팝콘M' , text : `팝콘M텍스트` , price : 8000 , img : 'img/store/팝콘M.png' },
-	{ category: '팝콘' , name : '팝콘L' , text : `팝콘L텍스트` , price : 9000 , img : 'img/store/팝콘L.png' },
-	{ category: '음료' , name : '콜라' , text : `콜라텍스트` , price : 9000 , img : 'img/store/콜라.png' } ,
-	{ category: '음료' , name : '아메리카노' , text : `아메리카노텍스트` , price : 4000 , img : 'img/store/아메리카노.png' },
-	{ category: '영화관람권' , name : '영화관람권' , text : `영화관람권텍스트` , price : 14000 , img : 'img/store/영화관람권.png' },
-	{ category: '기프트카드' , name : '기프트카드1' , text : `기프트카드1텍스트` , price : 14000 , img : 'img/store/기프트카드.png' },
-	{ category: '기프트카드' , name : '기프트카드2' , text : `기프트카드2텍스트` , price : 14000 , img : 'img/store/기프트카드2.png' },
-	{ category: '지점한정메뉴' , name : '[서울지점전용]라면팩' , text : `[서울지점전용]라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용라면팩.png' },
-	{ category: '지점한정메뉴' , name : '[서울지점전용]짜장라면팩' , text : `[서울지점전용]짜장라면팩 텍스트` , price : 14000 , img : 'img/store/서울지점전용짜장라면팩.png' }
+	{ category: '콤보' , name : '더블콤보' , text : `콜라M2+팝콘M2` , price : 11000 , img : 'img/store/더블콤보.png' },
+	{ category: '콤보' , name : '러브콤보' , text : `콜라M2+팝콘L1` , price : 12000 , img : 'img/store/러브콤보.png' },
+	{ category: '콤보' , name : '핫도그콤보' , text : `콜라M2+팝콘M2+핫도그1` , price : 13000 , img : 'img/store/핫도그콤보.png'	},
+	{ category: '콤보' , name : '나쵸콤보' , text : `콜라M2+팝콘M2+나쵸1` , price : 14000 , img : 'img/store/나쵸콤보.png' } ,
+	{ category: '콤보' , name : '맛밤콤보' , text : `콜라M2+팝콘M2+맛밤1` , price : 14000 , img : 'img/store/맛밤콤보.png' }, 
+	{ category: '스낵' , name : '핫도그' , text : `핫도그 ×1` , price : 7000 , img : 'img/store/핫도그.png' } ,
+	{ category: '스낵' , name : '나쵸' , text : `나쵸 ×1` , price : 7000 , img : 'img/store/나쵸.png' } ,
+	{ category: '스낵' , name : '맛밤' , text : `맛밤 ×1` , price : 5000 , img : 'img/store/맛밤.png' },
+	{ category: '팝콘' , name : '팝콘M' , text : `팝콘M ×1` , price : 8000 , img : 'img/store/팝콘M.png' },
+	{ category: '팝콘' , name : '팝콘L' , text : `팝콘L ×1` , price : 9000 , img : 'img/store/팝콘L.png' },
+	{ category: '음료' , name : '콜라' , text : `콜라` , price : 3000 , img : 'img/store/콜라.png' } ,
+	{ category: '음료' , name : '아메리카노' , text : `아메리카노` , price : 4000 , img : 'img/store/아메리카노.png' },
+	{ category: '영화관람권' , name : '영화관람권' , text : `영화관람권 1매` , price : 14000 , img : 'img/store/영화관람권.png' },
+	{ category: '기프트카드' , name : '기프트카드1' , text : `기프트카드 1매` , price : 14000 , img : 'img/store/기프트카드.png' },
+	{ category: '기프트카드' , name : '기프트카드2' , text : `기프트카드 1매` , price : 14000 , img : 'img/store/기프트카드2.png' },
+	{ category: '지점한정메뉴' , name : '[서울]라면팩' , text : `콜라M2+라면1` , price : 9000 , img : 'img/store/서울지점전용라면팩.png' },
+	{ category: '지점한정메뉴' , name : '[서울]짜장라면팩' , text : `콜라M2+짜장라면1` , price : 10000 , img : 'img/store/서울지점전용짜장라면팩.png' }
 ]
 // 객체배열
 let cartListArray = []; let orderListArray = [];
