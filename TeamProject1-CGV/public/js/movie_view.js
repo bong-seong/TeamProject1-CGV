@@ -69,7 +69,7 @@ function print(i){
 					<div class="col-md-9 information"> 
 						<div class="m_title" > 	  	  ${o2.name}  </div>
 						<div>
-							  <div class="m_score">  예매율 ${ o2.예매율 }%<span>|</sapn><span class="al"> <img src="img/main_page/황금알.png"> ${ o2.egg }%</span></div>
+							  <div class="m_score">  예매율 ${ o2.예매율 }%<span>|</sapn><span class="al2"> <img src="img/main_page/황금알.png"> ${ o2.egg }%</span></div>
 							  <div class="m_info">	 평점 	:<span class="percent"> ${o2.평점}</span>	 </div>
 							  <div class="m_info">   감독 	: 	${o2.감독}		</div>
 							  <div class="m_info">   장르		: 	${o2.장르}		</div>
