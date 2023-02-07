@@ -30,19 +30,35 @@ category_print(); product_print(0);
 function category_print(){ // 카테고리 출력 함수
 	// html 선언
 	html = ''
-	// 객체의 카테고리 하나씩 꺼내기
+		// 객체의 카테고리 하나씩 꺼내기
 	for ( let i = 0 ; i < categoryList.length ; i++ ){
 		html += `
 			<li class="category_li" onclick="product_print(${i})">${categoryList[i]}</li>
 			`
-		console.log( " i  : " + i )	
+		console.log( " i  : " + i )
 	}
 	// 카테고리 html출력
 	document.querySelector('.categoryUl').innerHTML = html;
+	
+	
 }
 
 function product_print(i){ // 카테고리별 제품출력 함수
 	console.log( "categoryList 인덱스 : " + i )
+	
+	//카테고리 전부 가져오기 돔객체화 
+	let categoryLi = document.querySelectorAll('.category_li')
+	console.log( categoryLi[i] )
+	
+	for ( let c = 0 ; c < categoryLi.length ; c++ ){
+		if ( c == i ){
+			categoryLi[c].classList.add('categoryliPoint');
+		} else {
+			categoryLi[c].classList.remove('categoryliPoint');
+		}
+	}
+	
+	
 	// html 선언
 	html = '';
 	html2 = ``;
