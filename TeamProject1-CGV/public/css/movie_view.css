@@ -14,7 +14,8 @@
     font-style: normal;
 }
 
-* {padding: 0px;font-family: 'SUIT-Regular';font-weight: 600;}
+* {padding: 0px; font-family: 'SUIT-Regular'; font-weight: 600;}
+
 a {text-decoration: none; color: white;}
 a:hover {color: white;}
 

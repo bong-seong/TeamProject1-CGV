@@ -13,14 +13,15 @@
 }
 
 /*공통 */
- * { font-family: 'SUIT-Regular'; margin: 0px;}
+ * { font-family: 'SUIT-Regular'; margin: 0px; padding: 0px;}
+
 
 
 /* 맨위 광고 */
 .cgv_ad_top{
 	background-color: #02162e;
 	text-align: center;
-	
+	font-weight: normal !important;
 }
 
 /*헤더 전체구역설정  */
@@ -35,6 +36,7 @@
     margin-bottom: 20px;
     background-color: #fff;
     border-bottom: 1px solid #eee;
+    font-weight: normal !important;
 }
 
 .header .header_btn {
@@ -134,7 +136,10 @@ a {
 .h_menu:hover .menu_list{ display: none; }
 
 
-#mainbox{ border-bottom: solid 1px #ebebeb; z-index: 103; }
+#mainbox{ 
+	border-bottom: solid 1px #ebebeb; z-index: 103;
+	font-weight: normal !important; 
+}
 
 .menu_list{ 
 	width:1040px; display: flex; 
@@ -165,9 +170,13 @@ a {
 	
 }	
 
+.movieul{ padding: 0px 20px;}
+.ticketul{ padding: 0px 17px;}
+.storeul{ padding: 0px 7px;}
+.eventul{ padding-left: 44px;}
+.vipul{ padding: 0px 15px;}
+
 .menu_list2 li{
-	margin: 0 px;
-	padding: 0px 20px;
 	list-style-type: none;
 }
 .menu_list:hover .menu_list2{ display: flex; 
