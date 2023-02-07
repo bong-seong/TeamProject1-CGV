@@ -13,14 +13,13 @@
 }
 
 /*공통 */
- * { font-family: 'SUIT-Regular' }
+ * { font-family: 'SUIT-Regular'; margin: 0px;}
 
 
 /* 맨위 광고 */
 .cgv_ad_top{
 	background-color: #02162e;
 	text-align: center;
-	
 }
 
 /*헤더 전체구역설정  */
