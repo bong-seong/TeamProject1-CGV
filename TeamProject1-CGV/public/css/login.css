@@ -29,7 +29,7 @@
 }
 
 .tab_box_select{
-	background-color: #fb4357 !important;
+	background-color: rgb(80, 46, 141) !important;
 }
 
 
@@ -68,12 +68,12 @@
 .login_btn_box{ 
 	text-align: center;
 	width: 264px; height: 39px;
-	background-color: #fb4357;
+	background-color: rgb(80, 46, 141);
 	position: relative;
 	margin: 0 auto;
 }
 .login_btn_box button{
-	background-color: #fb4357;
+	background-color: rgb(80, 46, 141);
 	border: solid 1px white;
 	width: 260px; height: 35px;
 	text-align: center;
@@ -114,6 +114,7 @@
 	background-color: rgba(0,0,0,0.5);
 	display: none;
 	justify-content: center; align-items: center;
+	z-index: 102;
 }
 
 .join_main_box{
@@ -143,17 +144,17 @@
 
 .join_title{ font-size: 20px; font-weight: bold; color:#222222; }
 .join_cancle{
-	border: solid 2px #fb4357;
+	border: solid 2px rgb(80, 46, 141); 
 	border-radius: 20px;
-	color: #fb4357;
+	color: rgb(80, 46, 141);
 	font-weight: bold;
 	width: 24px;
 	text-align: center;
 }
 
 .join_btn button{
-	border: solid 2px #fb4357;
-	color: #fb4357;
+	border: solid 2px rgb(80, 46, 141);
+	color: rgb(80, 46, 141);
 	font-weight: bold;
 	width: 120px;
 	height: 30px;
@@ -191,8 +192,8 @@
 .cj_one_btn_box button { 
 	font-size: 11px;
 	width: 140px; height: 23px;
-	border: solid 2px #fb4357;
-	color: #fb4357;
+	border: solid 2px rgb(80, 46, 141);
+	color: rgb(80, 46, 141); 
 	font-weight: bold;
 	text-align: center; 
 }
@@ -213,7 +214,7 @@
 	margin-bottom: 50px;
 }
 
-.none_member_box span{ color: #fb4357; font-size: 15px; }
+.none_member_box span{ color: rgb(80, 46, 141); font-size: 15px; }
 .none_member_box h3{ color: #222222; font-size: 15px;}
 
 .none_meber_top table{ border-collapse: collapse; }
@@ -250,9 +251,9 @@
 
 .personal_info_btn button{
 	text-align: center;
-	border:solid 2px #fb4357;
+	border:solid 2px rgb(80, 46, 141);
 	font-size: 12px;
-	color: #fb4357;
+	color: rgb(80, 46, 141);
 	padding: 5px;
 	font-weight: bold;
 }
@@ -307,9 +308,9 @@
 	border: solid 1px #cacac6;
 }
 .phone_num button{
-	border:solid 2px #fb4357;
+	border:solid 2px rgb(80, 46, 141); 
 	font-size: 12px;
-	color: #fb4357;
+	color: rgb(80, 46, 141); 
 	font-weight: bold;
 	width: 110px; height: 29px;
 	text-align: center;
@@ -317,9 +318,9 @@
 }
 
 .auth_num button{
-	border:solid 2px #fb4357;
+	border:solid 2px rgb(80, 46, 141); 
 	font-size: 12px;
-	color: #fb4357;
+	color: rgb(80, 46, 141); 
 	font-weight: bold;
 	width: 85px; height: 29px;
 	text-align: center;
@@ -333,7 +334,7 @@
 
 
 .ticketing_btn{
-	background-color: #fb4357;
+	background-color: rgb(80, 46, 141); 
 	color: white;
 	border: none;
 	width: 125px; height: 25px;
@@ -443,7 +444,7 @@
 .table_check_btn_box button{
 	margin: 10px 0px 200px 0px;
 	width: 125px; height: 25px;
-	background-color: #fb4357;
+	background-color: rgb(80, 46, 141); 
 	color: white;
 	border: none;
 	text-align: center;
