@@ -87,4 +87,5 @@ html 과 css 를 연계하여 해당 웹페이지의 구역의 style를 비교�
 ![파일구조도](https://user-images.githubusercontent.com/121651839/216260379-1b158b56-7eba-4701-af66-43ea63708a6e.png)
 
 
+## [mini project 1 CGVOX 화면구현 시연  ](https://youtu.be/uhs9L1H97hc)
 
