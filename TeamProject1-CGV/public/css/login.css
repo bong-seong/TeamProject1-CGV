@@ -9,6 +9,8 @@
 	width: 980px !important;
 }
 
+button{ background-color: white;}
+
 .login_tab{
 	display: flex;
 	justify-content: flex-start;
@@ -130,6 +132,7 @@
 	border-bottom: solid 2px #898987;
 	color: #222222;
 	font-size: 15px;
+	text-align: left;
 }
 
 .join_main_box table tbody td{
@@ -197,6 +200,8 @@
 	font-weight: bold;
 	text-align: center; 
 }
+
+.none_member_table td, .none_member_table th { text-align: left ;}
 
 .none_member_box{
 	width: 980px; margin: 0 auto;
@@ -266,6 +271,7 @@
 	display: table-cell;
 	vertical-align: middle;
 	width: 980px;
+	text-align: left;
 }
 .personal_info_box{ 
 	border: solid 1px #e2e2e0;
@@ -436,6 +442,10 @@
 	color: #222222;
 	font-size: 12px;
 }
+.tk_check_table_head th{
+	text-align: left;
+}
+
 
 .table_check_btn_box{
 	text-align: center;
@@ -472,6 +482,7 @@
 	text-align: center;
 	border: solid 2px #333333;
 	font-weight: bold;
+	background-color: white;
 }
 
 .join_table tbody td{

@@ -14,39 +14,40 @@
     font-style: normal;
 }
 
-* {padding: 0px; margin: 0 auto;font-family: 'SUIT-Regular';font-weight: 600;}
+* {padding: 0px;font-family: 'SUIT-Regular';font-weight: 600;}
 a {text-decoration: none; color: white;}
 a:hover {color: white;}
 
 h3 {font-family: 'twayair';margin-bottom: 3%;}
 
-/* 헤더/푸터 임시 사이즈 설정*/
-.header,.footer  {width: 100%; height: 250px;background-color: #eeeeee;}
-
-
 /* 전체 사이즈 설정*/
-.wrap {width: 1040px; padding: 2%; }
+.wrap2 {width: 1040px; padding: 2%; margin: 0 auto; }
 
 /* 영화 정보 설정*/
 .information {padding: 1%;}
 .m_title {font-family: 'twayair'; font-size: 25px;}
 .m_score {border-bottom: 1px solid #888888;
 			padding: 3% 0% 1% 0%;margin-bottom: 2%; }
-.al img {width: 15px;}
+.al2 img {width: 15px;}
 .percent{color: red;font-weight:900;}
+
+/* 인덱스바 설정*/
 .bar { width:700px; ;height: 50px; 
 		font-size: 17px;font-weight: 600;
-		margin: 5% 15%; padding-left:5%;
-		color:white;border: 3px solid rgb(31, 18, 54);background-color:rgb(31, 18, 54); }
+		margin: 5% 14%; padding-left:5%;
+		border: 3px solid rgb(31, 18, 54);
+		color:white;background-color:rgb(31, 18, 54); }
 .bar span {padding:1.5%;}
-.bar-item{border: none;background: white;padding: 1%;background-color:rgb(31, 18, 54);color:white}
-.bar-item:focus{color: #f4ae0b;}
+.bar-item{border: none;padding: 1%;
+			background-color:rgb(31, 18, 54);color:white!important;}
+.bar-item:focus{color: #f4ae0b !important;}
 .bar-item:hover{opacity: 0.8;}
 
 /* 영화 소개 설정 */
 .info_bar {background-color:rgba(48,38,110,0.5);padding-left:1%;
 			font-size: 18px;font-weight: 600;color:white;}
-.info_content{padding: 2%;}		
+.info_content{padding: 2%;}
+.carousel-inner{margin-left: 9%;}		
 .copy{font-size: 35px;font-weight: 400;} 
 .event {padding: 3%;margin:2%;font-size:20px;
 		background-color: #eeeeee;border-radius: 15px; }
@@ -63,7 +64,7 @@ h3 {font-family: 'twayair';margin-bottom: 3%;}
 .id{padding: 3% 0%;}
 
 /* 페이지네이션 설정 */
-.pagination {padding-top: 5%;}		 		 
+.pagination {padding-top:5%;}		 		 
 .page-link {
   color: #000; 
   background-color: #fff;

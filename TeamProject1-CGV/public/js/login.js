@@ -172,7 +172,7 @@ function tabPrint( i ){
 					<p>개인정보를 잘못 입력하시면 예매내역 확인/취소 및 티켓 발권이 어려울 수 있으니, 입력하신 정보를 다시 한번 확인해주시기 바랍니다.</p>
 					<div class="personal_info_box">
 						<div class="personal_info_title"> 개인정보 입력 </div>
-						<table>
+						<table class="none_member_table">
 							<thead>
 								<tr>
 									<th colspan="2">모든 항목은 필수 입력사항입니다.</th>
